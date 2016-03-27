@@ -1,0 +1,21 @@
+﻿<div>
+    <h1>Books</h1>
+
+    <ol>
+        <li data-ng-repeat="book in books" style="clear:both;">
+            <div style="float:left; min-width: 100px; text-align: center;">
+                <img data-ng-src="images/books/{{book.CoverImage}}" style="max-height: 100px;" alt="{{book.Title}}" />
+            </div>
+            <div>
+                <a href="#/book/{{book.Id}}"><strong>{{book.Title}}</strong></a>
+                <br />
+                <span>{{book.Author}}</span>
+                <br />
+                <span><small>{{book.Publisher}}</small></span>
+                <br />
+                <span><small>ISBN-{{book.ISBN}}</small></span>
+                <hr />
+            </div>
+        </li>
+    </ol>
+</div>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title>Book library</title>
+	<meta charset="utf-8" />
+
+    <!-- js libs -->
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+</head>
+<body>
+
+    <!-- navigation -->
+    <nav>
+        <ul>
+            <li style="display: inline-block"><a href="#/books">Home</a></li>
+        </ul>
+    </nav>
+    
+    <!-- main section -->
+    <main>
+        <data-ng-view />
+    </main>
+
+    <!-- scripts -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/books/bookController.js"></script>
+    <script src="scripts/books/booksController.js"></script>
+    <script src="scripts/books/booksFactory.js"></script>
+    <script src="scripts/books/booksService.js"></script>
+</body>
+</html>
