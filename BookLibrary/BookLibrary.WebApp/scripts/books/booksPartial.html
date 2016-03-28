@@ -2,12 +2,14 @@
     <h1>Books</h1>
 
     <ol>
-        <li data-ng-repeat="book in books" style="clear:both;">
+        <li data-ng-repeat="book in books | orderBy:'Favorite':true" style="clear:both;">
             <div style="float:left; min-width: 100px; text-align: center;">
                 <img data-ng-src="images/books/{{book.CoverImage}}" style="max-height: 100px;" alt="{{book.Title}}" />
             </div>
             <div>
-                <a href="#/book/{{book.Id}}"><strong>{{book.Title}}</strong></a>
+                <a href="#/book/{{book.Id}}"><strong>{{book.Title}}</strong></a> - 
+                <a href="" data-ng-click="book.Favorite = !book.Favorite">{{book.Favorite ? 'FAV' : 'NOT FAV'}}</a>
+
                 <br />
                 <span>{{book.Author}}</span>
                 <br />

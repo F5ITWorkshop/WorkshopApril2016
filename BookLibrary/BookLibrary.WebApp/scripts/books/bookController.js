@@ -1,4 +1,4 @@
-﻿app.controller('BookController', function ($scope, $routeParams, BooksFactory) {
+﻿app.controller('BookController', function ($scope, $routeParams, BooksFactory, BooksService) {
 
     var bookId = $routeParams.id;
 
