@@ -7,6 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.DataModel", "Bo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.WebApp", "BookLibrary.WebApp\BookLibrary.WebApp.csproj", "{86743A15-4DCA-4803-AD4C-98FF8579931A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.REST", "BookLibrary.REST\BookLibrary.REST.csproj", "{EC15BBA6-D0CB-4DF7-8149-0EFF67B6D1D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.DomainLogic", "BookLibrary.DomainLogic\BookLibrary.DomainLogic.csproj", "{F7667002-47D7-4A8A-AD0C-B43D4E9A9DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.DataAccess", "BookLibrary.DataAccess\BookLibrary.DataAccess.csproj", "{0EE19E28-9D12-4232-962F-6A1F40749FDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{9C756D21-2AA5-4D1D-99EB-52B46011620C}"
+	ProjectSection(SolutionItems) = preProject
+		Procedures.sql = Procedures.sql
+		Tables.sql = Tables.sql
+		TestData.sql = TestData.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +34,18 @@ Global
 		{86743A15-4DCA-4803-AD4C-98FF8579931A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86743A15-4DCA-4803-AD4C-98FF8579931A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86743A15-4DCA-4803-AD4C-98FF8579931A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC15BBA6-D0CB-4DF7-8149-0EFF67B6D1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC15BBA6-D0CB-4DF7-8149-0EFF67B6D1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC15BBA6-D0CB-4DF7-8149-0EFF67B6D1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC15BBA6-D0CB-4DF7-8149-0EFF67B6D1D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7667002-47D7-4A8A-AD0C-B43D4E9A9DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7667002-47D7-4A8A-AD0C-B43D4E9A9DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7667002-47D7-4A8A-AD0C-B43D4E9A9DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7667002-47D7-4A8A-AD0C-B43D4E9A9DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE19E28-9D12-4232-962F-6A1F40749FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE19E28-9D12-4232-962F-6A1F40749FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE19E28-9D12-4232-962F-6A1F40749FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE19E28-9D12-4232-962F-6A1F40749FDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

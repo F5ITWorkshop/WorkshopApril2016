@@ -1,8 +1,15 @@
-﻿app.factory('BooksFactory', function () {
+﻿app.factory('BooksFactory', function ($resource) {
+    var BooksResource = $resource('REST/Book.svc/Books');
     var booksFactory = {
-        getAllBooks: getAllBooks,
+
+        getAllBooks: getAllBooksFromServer,
         getBook: getBook,
     };
+
+    function getAllBooksFromServer() {
+        books = BooksResource.query();
+        return books;
+    }
 
     function getAllBooks() {
         books = [

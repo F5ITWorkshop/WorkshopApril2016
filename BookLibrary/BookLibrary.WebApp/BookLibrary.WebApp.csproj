@@ -66,9 +66,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="js\angular-resource.min.js" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="js\angular.min.js.map" />
     <Content Include="js\angular-route.min.js.map" />
+    <Content Include="scripts\angular-mocks.js" />
+    <Content Include="scripts\angular-resource.js" />
+    <Content Include="scripts\angular-resource.min.js" />
+    <Content Include="scripts\angular.js" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\angular.min.js.map" />
+    <Content Include="scripts\angular-resource.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -89,6 +99,7 @@
     <Content Include="js\angular.min.js" />
     <Content Include="js\angular-route.js" />
     <Content Include="js\angular-route.min.js" />
+    <Content Include="REST\Book.svc" />
     <Content Include="scripts\app.js" />
     <Content Include="scripts\books\bookController.js" />
     <Content Include="scripts\books\bookPartial.html" />
@@ -101,7 +112,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BookLibrary.REST\BookLibrary.REST.csproj">
+      <Project>{ec15bba6-d0cb-4df7-8149-0eff67b6d1d4}</Project>
+      <Name>BookLibrary.REST</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
