@@ -8,7 +8,7 @@
             </div>
             <div>
                 <a href="#/book/{{book.Id}}"><strong>{{book.Title}}</strong></a> - 
-                <a href="" data-ng-click="book.Favorite = !book.Favorite">{{book.Favorite ? 'FAV' : 'NOT FAV'}}</a>
+                <a href="" data-ng-click="toggleFavorite(book)">{{book.Favorite ? 'FAV' : 'NOT FAV'}}</a>
 
                 <br />
                 <span>{{book.Author}}</span>

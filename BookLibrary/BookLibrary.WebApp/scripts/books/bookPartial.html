@@ -1,4 +1,4 @@
-﻿<h1>{{book.Title}} - <a href="" data-ng-click="book.Favorite = !book.Favorite">{{book.Favorite ? 'FAV' : 'NOT FAV'}}</a></h1> 
+﻿<h1>{{book.Title}} - <a href="" data-ng-click="toggleFavorite(book)">{{book.Favorite ? 'FAV' : 'NOT FAV'}}</a></h1> 
 
 <div>
     <img data-ng-src="images/books/{{book.CoverImage}}" alt="{{book.Title}}" />

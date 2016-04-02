@@ -4,6 +4,7 @@
     var booksFactory = {
         getAllBooks: getAllBooks,
         getBook: getBook,
+        favoriteBook: favoriteBook
     };
 
     function getAllBooks() {
@@ -15,6 +16,10 @@
         book = BooksResource.get({ bookId: bookId })
         return book;
     }
+
+    function favoriteBook(book) {
+        BooksResource.save(book);
+    };
 
     return booksFactory;
 });

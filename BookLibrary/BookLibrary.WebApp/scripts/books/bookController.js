@@ -4,4 +4,9 @@
 
     $scope.book = BooksFactory.getBook(bookId);
 
+    $scope.toggleFavorite = function (book) {
+        book.Favorite = !book.Favorite;
+
+        BooksFactory.favoriteBook(book);
+    };
 });
