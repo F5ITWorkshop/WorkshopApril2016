@@ -17,11 +17,11 @@ namespace BookLibrary.REST
         List<Book> GetAllBooks();
 
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "/Book/{bookId}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare)]
+        [WebInvoke(Method = "GET", UriTemplate = "/Books/{bookId}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare)]
         Book GetBook(string bookId);
 
         [OperationContract]
-        [WebInvoke(Method = "POST", UriTemplate = "/Book", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare)]
-        string SaveBook(Book organization);
+        [WebInvoke(Method = "POST", UriTemplate = "/Books", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare)]
+        string SaveBook(Book book);
     }
 }

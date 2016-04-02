@@ -10,18 +10,6 @@
         return checkDigit == ISBN[ISBN.length - 1];
     };
 
-    this.generateISBN = function () {
-        var infoDigits = '';
-
-        for (var i = 0; i < 12; i++) {
-            infoDigits += Math.floor((Math.random() * 10));
-        }
-
-        var ISBN = infoDigits + calculateCheckDigit(infoDigits);
-
-        return ISBN;
-    };
-
     function calculateCheckDigit(infoDigits) {
         var sum = 0;
 

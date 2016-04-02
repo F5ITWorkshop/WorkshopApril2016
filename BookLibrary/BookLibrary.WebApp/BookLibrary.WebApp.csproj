@@ -66,19 +66,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="js\angular-resource.min.js" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="js\angular.min.js.map" />
     <Content Include="js\angular-route.min.js.map" />
-    <Content Include="scripts\angular-mocks.js" />
-    <Content Include="scripts\angular-resource.js" />
-    <Content Include="scripts\angular-resource.min.js" />
-    <Content Include="scripts\angular.js" />
-    <Content Include="scripts\angular.min.js" />
-    <Content Include="scripts\angular.min.js.map" />
-    <Content Include="scripts\angular-resource.min.js.map" />
+    <Content Include="js\angular-resource.js" />
+    <Content Include="js\angular-resource.min.js" />
+    <Content Include="js\angular-resource.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -104,6 +99,7 @@
     <Content Include="scripts\books\bookController.js" />
     <Content Include="scripts\books\bookPartial.html" />
     <Content Include="scripts\books\booksController.js" />
+    <Content Include="scripts\books\booksFactory_phase1.js" />
     <Content Include="scripts\books\booksService.js" />
     <Content Include="scripts\books\booksFactory.js" />
     <Content Include="scripts\books\booksPartial.html" />
