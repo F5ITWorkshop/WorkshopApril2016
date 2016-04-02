@@ -1,8 +1,16 @@
 ﻿<div>
     <h1>Books</h1>
 
+    <label>
+        Search
+        <input type="text" data-ng-model="search.text" />
+    </label>
+
+    <button type="button" data-ng-click="toggleShowOnlyFavorites()">{{!showOnlyFavorites ? 'Show only favorites' : 'Show all'}}</button>
+
     <ol>
-        <li data-ng-repeat="book in books | orderBy:'Favorite':true" style="clear:both;">
+        <li data-ng-repeat="book in books | filter:filterByTitle | orderBy:'Favorite':true" style="clear:both;" 
+            data-ng-style="{'background-color': book.Favorite ? 'gold' : inherit}">
             <div style="float:left; min-width: 100px; text-align: center;">
                 <img data-ng-src="images/books/{{book.CoverImage}}" style="max-height: 100px;" alt="{{book.Title}}" />
             </div>
