@@ -103,6 +103,7 @@
     <Content Include="scripts\books\booksService.js" />
     <Content Include="scripts\books\booksFactory.js" />
     <Content Include="scripts\books\booksPartial.html" />
+    <Content Include="scripts\books\validateISBNDirective.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

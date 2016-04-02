@@ -6,7 +6,9 @@
         <input type="text" data-ng-model="search.text" />
     </label>
 
-    <button type="button" data-ng-click="toggleShowOnlyFavorites()">{{!showOnlyFavorites ? 'Show only favorites' : 'Show all'}}</button>
+    <span check-isbn="ISBN-9780451532114"></span>
+
+    <button type="button" data-ng-click="toggleShowOnlyFavorites()">{{showOnlyFavorites ? 'Show all books' : 'Show only favorites'}}</button>
 
     <ol>
         <li data-ng-repeat="book in books | filter:filterByTitle | orderBy:'Favorite':true" style="clear:both;" 
@@ -21,9 +23,9 @@
                 <br />
                 <span>{{book.Author}}</span>
                 <br />
-                <span><small>{{book.Publisher}}</small></span>
+                <span>{{book.Publisher}}</span>
                 <br />
-                <span><small>ISBN-{{book.ISBN}}</small></span>
+                <span check-isbn="ISBN-{{book.ISBN}}"></span>
                 <hr />
             </div>
         </li>

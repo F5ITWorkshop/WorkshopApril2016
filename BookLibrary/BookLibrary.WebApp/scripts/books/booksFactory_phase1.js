@@ -17,7 +17,7 @@
             },
             {
                 Id: 2,
-                ISBN: '9780743273565',
+                ISBN: '8780743273565',
                 Title: 'The Great Gatsby',
                 Author: 'F. Scott Fitzgeral',
                 Publisher: 'Charles Scribner\'s Sons',

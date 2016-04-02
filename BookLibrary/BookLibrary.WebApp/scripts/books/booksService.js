@@ -2,6 +2,9 @@
     
     this.validateISBN = function (ISBN) {
 
+        // strip 'ISBN' text if it exists
+        ISBN = ISBN.toUpperCase().replace(new RegExp('ISBN', 'g'), '');
+
         // strip possible dashes
         ISBN = ISBN.replace(new RegExp('-', 'g'), '');
 
