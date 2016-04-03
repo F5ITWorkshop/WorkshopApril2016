@@ -1,5 +1,7 @@
 ﻿app.controller('BooksController', function ($scope, $filter, BooksFactory) {
 
+    $scope.title = 'Books';
+
     $scope.search = { text: '' };
 
     $scope.showOnlyFavorites = false;
