@@ -9,12 +9,12 @@
     $scope.books = BooksFactory.getAllBooks();
 
     // first phase this works
-    //allBooks = angular.copy($scope.books);
+    allBooks = angular.copy($scope.books);
 
     // second phase this will work
-    $scope.books.$promise.then(function () {
-        allBooks = angular.copy($scope.books);
-    });
+    //$scope.books.$promise.then(function () {
+    //    allBooks = angular.copy($scope.books);
+    //});
 
     $scope.toggleFavorite = function (book) {
         book.Favorite = !book.Favorite;

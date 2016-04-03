@@ -2,33 +2,45 @@
 <html data-ng-app="app">
 <head>
     <title>Book library</title>
-	<meta charset="utf-8" />
-
+    <meta charset="utf-8" />
+    <!-- boostrap -->
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <!-- js libs -->
     <script src="js/angular.js"></script>
     <script src="js/angular-route.js"></script>
     <script src="js/angular-resource.js"></script>
 </head>
 <body>
-
     <!-- navigation -->
-    <nav>
-        <ul>
-            <li style="display: inline-block"><a href="#/books">Home</a></li>
-        </ul>
+    <nav class="navbar navbar-static-top" style="margin-bottom:20px; height:60px;">
+        <div class="container" style="height:60px;">
+            <div class="navbar-header" style="max-width:50%;float:left;margin-left:0px; margin-right:10px;">
+                <a class="navbar-brand" href="#" style="padding:5px 0 0 0;margin-left:0px;">
+                    <img src="images/logho.png" style="height:50px;" />
+                </a>
+            </div>
+            <ul class="nav navbar-nav" style="height:60px;margin:0 !important;">
+                <li class="nav-item active" style="display: inline-block"><a href="#/books" style="height:60px;padding-top:20px;">Home</a></li>
+            </ul>
+        </div>
     </nav>
-    
+
     <!-- main section -->
     <main>
-        <data-ng-view />
+        <div class="container">
+            <div data-ng-view> </div>
+        </div>
     </main>
-
     <!-- scripts -->
     <script src="scripts/app.js"></script>
     <script src="scripts/books/bookController.js"></script>
     <script src="scripts/books/booksController.js"></script>
-    <script src="scripts/books/booksFactory.js"></script>
+    <!--<script src="scripts/books/booksFactory.js"></script>-->
+    <script src="scripts/books/booksFactory_phase1.js"></script>
     <script src="scripts/books/booksService.js"></script>
     <script src="scripts/books/validateISBNDirective.js"></script>
+    <!-- vendor scripts -->
+    <script src="vendor/jQuery/jquery-1.9.1.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
