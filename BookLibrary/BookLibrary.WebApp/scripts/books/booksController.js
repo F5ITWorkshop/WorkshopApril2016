@@ -1,14 +1,12 @@
 ﻿app.controller('BooksController', function ($scope, $filter, BooksFactory) {
 
     $scope.title = 'Books';
-
     $scope.search = { text: '' };
-
     $scope.showOnlyFavorites = false;
 
-    $scope.books = BooksFactory.getAllBooks();
-
     var allBooks = [];
+
+    $scope.books = BooksFactory.getAllBooks();
 
     // first phase this works
     //allBooks = angular.copy($scope.books);
@@ -41,8 +39,7 @@
             $scope.books = $filter('filter')(allBooks, { 'Favorite': $scope.showOnlyFavorites });
         } else {
             $scope.books = allBooks;
-        }
-        
+        }        
     };
 
 });

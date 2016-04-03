@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{9C
 		TestData.sql = TestData.sql
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary.WebApp.Tests", "BookLibrary.WebApp.Tests\BookLibrary.WebApp.Tests.csproj", "{8EB024E8-D0C9-40D4-816A-A254D16D9C29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{0EE19E28-9D12-4232-962F-6A1F40749FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EE19E28-9D12-4232-962F-6A1F40749FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EE19E28-9D12-4232-962F-6A1F40749FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB024E8-D0C9-40D4-816A-A254D16D9C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB024E8-D0C9-40D4-816A-A254D16D9C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB024E8-D0C9-40D4-816A-A254D16D9C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB024E8-D0C9-40D4-816A-A254D16D9C29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

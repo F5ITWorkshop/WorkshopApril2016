@@ -8,6 +8,8 @@
         // strip possible dashes
         ISBN = ISBN.replace(new RegExp('-', 'g'), '');
 
+        if (ISBN.length != 13) return false;
+
         var checkDigit = calculateCheckDigit(ISBN.substring(0,12));
 
         return checkDigit == ISBN[ISBN.length - 1];

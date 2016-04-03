@@ -1,0 +1,14 @@
+﻿{
+    "References": [
+      { "Path": "../BookLibrary.WebApp/js/angular.js" },
+      { "Path": "../BookLibrary.WebApp/js/angular-mocks.js" },
+      { "Path": "../BookLibrary.WebApp/js/angular-resource.js" },
+      { "Path": "../BookLibrary.WebApp/js/angular-route.js" },
+      { "Path": "../BookLibrary.WebApp/scripts/app.js" },
+      { "Path": "../BookLibrary.WebApp/scripts/books/booksController.js" },
+      { "Path": "../BookLibrary.WebApp/scripts/books/booksFactory.js" },
+      { "Path": "../BookLibrary.WebApp/scripts/books/booksService.js" },
+      { "Path": "../BookLibrary.WebApp/scripts/books/bookController.js" },
+      { "Path": "../BookLibrary.WebApp/scripts/books/validateISBNDirective.js" }
+    ]
+}
