@@ -15,18 +15,16 @@
         <ol>
             <li data-ng-repeat="book in books" style="clear:both;">
                 <div style="float:left; min-width: 100px; text-align: center;">
-                    <img data-ng-src="images/books/{{book.CoverImage}}"
-                         style="max-height: 100px;"
-                          alt="{{book.Title}}" />
+                    <img data-ng-src="images/books/{{book.CoverImage}}" style="max-height: 100px;" alt="{{book.Title}}" />
                 </div>
                 <div>
                     <span><strong>{{book.Title}}</strong></span>
                     <br />
                     <span>{{book.Author}}</span>
                     <br />
-                    <span><small>{{book.Publisher}}</small></span>
+                    <span>{{book.Publisher}}</span>
                     <br />
-                    <span><small>{{book.ISBN}}</small></span>
+                    <span>ISBN-{{book.ISBN}}</span>
                     <hr />
                 </div>
             </li>

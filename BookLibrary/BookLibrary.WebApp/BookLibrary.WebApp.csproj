@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index_static.html" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
