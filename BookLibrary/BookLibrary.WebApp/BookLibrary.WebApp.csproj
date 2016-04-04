@@ -78,15 +78,14 @@
     <Content Include="js\angular-resource.js" />
     <Content Include="js\angular-resource.min.js" />
     <Content Include="js\angular-resource.min.js.map" />
-    <Content Include="vendor\bootstrap\bootstrap-theme.css.map" />
-    <Content Include="vendor\bootstrap\bootstrap-theme.min.css.map" />
-    <Content Include="vendor\bootstrap\bootstrap.css.map" />
-    <Content Include="vendor\bootstrap\bootstrap.min.css.map" />
-    <Content Include="vendor\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="vendor\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="vendor\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="vendor\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="vendor\jQuery\jquery-1.9.1.min.map" />
+    <Content Include="css\bootstrap\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap\bootstrap.css.map" />
+    <Content Include="css\bootstrap\bootstrap.min.css.map" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Properties\PublishProfiles\TestServer.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -117,16 +116,13 @@
     <Content Include="scripts\books\booksFactory.js" />
     <Content Include="scripts\books\booksPartial.html" />
     <Content Include="scripts\books\validateISBNDirective.js" />
-    <Content Include="vendor\bootstrap\bootstrap-theme.css" />
-    <Content Include="vendor\bootstrap\bootstrap-theme.min.css" />
-    <Content Include="vendor\bootstrap\bootstrap.css" />
-    <Content Include="vendor\bootstrap\bootstrap.js" />
-    <Content Include="vendor\bootstrap\bootstrap.min.css" />
-    <Content Include="vendor\bootstrap\bootstrap.min.js" />
-    <Content Include="vendor\fonts\glyphicons-halflings-regular.svg" />
-    <None Include="vendor\jQuery\jquery-1.9.1.intellisense.js" />
-    <Content Include="vendor\jQuery\jquery-1.9.1.js" />
-    <Content Include="vendor\jQuery\jquery-1.9.1.min.js" />
+    <Content Include="css\bootstrap\bootstrap-theme.css" />
+    <Content Include="css\bootstrap\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap\bootstrap.css" />
+    <Content Include="css\bootstrap\bootstrap.js" />
+    <Content Include="css\bootstrap\bootstrap.min.css" />
+    <Content Include="css\bootstrap\bootstrap.min.js" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
