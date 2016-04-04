@@ -8,3 +8,20 @@
     color:white;
     text-shadow: 3px 3px 3px black;
 }
+
+.isbn-glyph {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+.isbn-glyph.glyphicon-refresh {
+    color: #250070;
+}
+
+.isbn-glyph.glyphicon-ok-circle {
+    color: green;
+}
+
+.isbn-glyph.glyphicon-remove-circle {
+    color: red;
+}

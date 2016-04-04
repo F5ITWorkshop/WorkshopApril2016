@@ -14,7 +14,7 @@
             });
 
             if (ISBNText.indexOf('ISBN') > -1) {
-                var checkerElement = angular.element('<a style="cursor: pointer"> CHECK</a>');
+                var checkerElement = angular.element('<span class="glyphicon glyphicon-refresh isbn-glyph" style="cursor: pointer"></span>');
 
                 checkerElement.bind('click', function () {
                     checkerElement.children().remove();
@@ -22,9 +22,9 @@
                     var isbnValid = BooksService.validateISBN(ISBNText);                   
 
                     if (isbnValid) {
-                        checkerElement.append('<span> - VALID</span>');
+                        checkerElement.append('<span class="glyphicon glyphicon-ok-circle isbn-glyph"></span>');
                     } else {
-                        checkerElement.append('<span> - INVALID</span>');
+                        checkerElement.append('<span class="glyphicon glyphicon-remove-circle isbn-glyph"></span>');
                     }            
 
                 });
