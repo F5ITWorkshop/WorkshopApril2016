@@ -13,7 +13,7 @@
 
     </div>
     <ul class="books-list">
-        <li data-ng-repeat="book in books | filter:filterByTitle | orderBy:'Favorite':true" style="float:left; display:inline-block; padding:5px;" class="col-md-4 col-sm-6 col-xs-12">
+        <li data-ng-repeat="book in books | filter:filterByTitle | orderBy:'Favorite':true" class="col-md-4 col-sm-6 col-xs-12 book-list-item">
             <div class="book-box">
                 <div data-ng-click="toggleFavorite(book)" class="inner-triangle book-favorite">
                     <span data-ng-hide="book.Favorite" class="glyphicon glyphicon-star-empty book-fav-star"></span>

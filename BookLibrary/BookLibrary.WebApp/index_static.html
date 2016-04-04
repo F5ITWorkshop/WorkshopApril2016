@@ -2,95 +2,120 @@
 <html>
 <head>
     <title>Book library</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <!-- boostrap -->
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    
-    <div>
-        <h1>Books</h1>
+    <!-- navigation -->
+    <nav class="navbar navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="logo-height " />
+                </a>
+            </div>
+        </div>
+    </nav>
 
-        <ol>
-            <li style="clear:both;">
-                <div class="static-book-image">
-                    <img src="images/books/war_and_peace.jpg" class="static-image-size" alt="War and Peace" />
-                </div>
-                <div>
-                    <span><strong>War and Peace</strong></span>
-                    <br />
-                    <span>Leo Tolstoy</span>
-                    <br />
-                    <span>The Russian Messenger</span>
-                    <br />
-                    <span>ISBN-9780451532114</span>
-                    <hr />
-                </div>
-            </li>
+    <!-- main section -->
+    <main>
+        <div class="jumbotron">
+            <h1>Book library</h1>
+        </div>
 
-            <li style="clear:both;">
-                <div class="static-book-image">
-                    <img src="images/books/the_great_gatsby.gif" class="static-image-size" alt="The Great Gatsby" />
-                </div>
-                <div>
-                    <span><strong>The Great Gatsby</strong></span>
-                    <br />
-                    <span>F. Scott Fitzgeral</span>
-                    <br />
-                    <span>Charles Scribner's Sons</span>
-                    <br />
-                    <span>ISBN-8780743273565</span>
-                    <hr />
-                </div>
-            </li>
+        <div class="container">
+            <ul class="books-list">
+                <li class="col-md-4 col-sm-6 col-xs-12 book-list-item">
+                    <div class="book-box">
+                        <div class="book-image" style="background-image:url('../images/books/war_and_peace.jpg')">
+                        </div>
+                        <div style="padding:5px;">
+                            <span style="font-size:16px;"><a href="#"><strong>War and Peace</strong></a></span>
+                            <br />
+                            <i>Leo Tolstoy</i>
+                            <br />
+                            <span>The Russian Messenger</span>
+                            <br />
+                            <span>ISBN-9780451532114</span>
+                            <hr />
+                        </div>
+                    </div>
+                </li>
 
-            <li style="clear:both;">
-                <div class="static-book-image">
-                    <img src="images/books/the_adventures_of_huckleberry_finn.jpg" class="static-image-size" alt="The Adventures of Huckleberry Finn" />
-                </div>
-                <div>
-                    <span><strong>The Adventures of Huckleberry Finn</strong></span>
-                    <br />
-                    <span>Mark Twain</span>
-                    <br />
-                    <span>Chatto & Windus</span>
-                    <br />
-                    <span>ISBN-9780486280615</span>
-                    <hr />
-                </div>
-            </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 book-list-item">
+                    <div class="book-box">
+                        <div class="book-image" style="background-image:url('../images/books/the_great_gatsby.gif')">
+                        </div>
+                        <div style="padding:5px;">
+                            <span style="font-size:16px;"><a href="#"><strong>The Great Gatsby</strong></a></span>
+                            <br />
+                            <i>F. Scott Fitzgerald</i>
+                            <br />
+                            <span>Charles Scribner's Sons</span>
+                            <br />
+                            <span>ISBN-8780743273565</span>
+                            <hr />
+                        </div>
+                    </div>
+                </li>
 
-            <li style="clear:both;">
-                <div class="static-book-image">
-                    <img src="images/books/hamlet.jpg" class="static-image-size" alt="Hamlet" />
-                </div>
-                <div>
-                    <span><strong>Hamlet</strong></span>
-                    <br />
-                    <span>William Shakespeare</span>
-                    <br />
-                    <span>Simon & Schuster</span>
-                    <br />
-                    <span>ISBN-9780743477123</span>
-                    <hr />
-                </div>
-            </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 book-list-item">
+                    <div class="book-box">
+                        <div class="book-image" style="background-image:url('../images/books/the_adventures_of_huckleberry_finn.jpg')">
+                        </div>
+                        <div style="padding:5px;">
+                            <span style="font-size:16px;"><a href="#"><strong>The Adventures of Huckleberry Finn</strong></a></span>
+                            <br />
+                            <i>Mark Twain</i>
+                            <br />
+                            <span>Chatto & Windus</span>
+                            <br />
+                            <span>ISBN-9780486280615</span>
+                            <hr />
+                        </div>
+                    </div>
+                </li>
 
-            <li style="clear:both;">
-                <div class="static-book-image">
-                    <img src="images/books/moby_dick.jpg" class="static-image-size" alt="Moby Dick" />
-                </div>
-                <div>
-                    <span><strong>Moby Dick</strong></span>
-                    <br />
-                    <span>Herman Melville</span>
-                    <br />
-                    <span>Harper & Brother</span>
-                    <br />
-                    <span>ISBN-9781853260087</span>
-                    <hr />
-                </div>
-            </li>
+                <li class="col-md-4 col-sm-6 col-xs-12 book-list-item">
+                    <div class="book-box">
+                        <div class="book-image" style="background-image:url('../images/books/hamlet.jpg')">
+                        </div>
+                        <div style="padding:5px;">
+                            <span style="font-size:16px;"><a href="#"><strong>Hamlet</strong></a></span>
+                            <br />
+                            <i>William Shakespeare</i>
+                            <br />
+                            <span>Simon & Schuster</span>
+                            <br />
+                            <span>ISBN-9780743477123</span>
+                            <hr />
+                        </div>
+                    </div>
+                </li>
 
-        </ol>
-    </div>    
+                <li class="col-md-4 col-sm-6 col-xs-12 book-list-item">
+                    <div class="book-box">
+                        <div class="book-image" style="background-image:url('../images/books/moby_dick.jpg')">
+                        </div>
+                        <div style="padding:5px;">
+                            <span style="font-size:16px;"><a href="#"><strong>Moby Dick</strong></a></span>
+                            <br />
+                            <i>Herman Melville</i>
+                            <br />
+                            <span>Harper & Brother</span>
+                            <br />
+                            <span>ISBN-9781853260087</span>
+                            <hr />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

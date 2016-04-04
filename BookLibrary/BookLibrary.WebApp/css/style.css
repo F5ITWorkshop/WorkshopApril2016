@@ -41,6 +41,12 @@
     padding: 0 !important;
 }
 
+.book-list-item {
+    float:left; 
+    display:inline-block; 
+    padding:5px;
+}
+
 .book-box {
     width: 100%;
     background-color: #fcfcfc;
