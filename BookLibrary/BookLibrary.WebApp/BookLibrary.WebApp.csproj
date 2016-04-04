@@ -87,6 +87,7 @@
     <Content Include="vendor\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="vendor\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="vendor\jQuery\jquery-1.9.1.min.map" />
+    <None Include="Properties\PublishProfiles\TestServer.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -100,7 +101,6 @@
     <Content Include="images\books\the_great_gatsby.gif" />
     <Content Include="images\books\the_adventures_of_huckleberry_finn.jpg" />
     <Content Include="images\books\war_and_peace.jpg" />
-    <Content Include="index_phase1.html" />
     <Content Include="index.html" />
     <Content Include="js\angular-mocks.js" />
     <Content Include="js\angular.js" />

@@ -13,7 +13,7 @@
     }
 
     function getBook(bookId) {
-        book = BooksResource.get({ bookId: bookId })
+        book = BooksResource.get({ bookId: bookId });
         return book;
     }
 
