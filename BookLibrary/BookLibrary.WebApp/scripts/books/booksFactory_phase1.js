@@ -2,6 +2,7 @@
     var booksFactory = {
         getAllBooks: getAllBooks,
         getBook: getBook,
+        favoriteBook: favoriteBook
     };
 
     var books = [
@@ -69,6 +70,10 @@
         }
 
         return null;
+    }
+
+    function favoriteBook(book) {
+        
     }
 
     return booksFactory;

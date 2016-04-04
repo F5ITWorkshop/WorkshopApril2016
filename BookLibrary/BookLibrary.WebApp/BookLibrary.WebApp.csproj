@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\style.css" />
+    <Content Include="images\jumbotron.jpg" />
     <Content Include="images\logho.png" />
     <Content Include="index_static.html" />
     <Content Include="packages.config">

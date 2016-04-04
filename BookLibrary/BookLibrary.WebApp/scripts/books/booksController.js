@@ -1,25 +1,29 @@
 ﻿app.controller('BooksController', function ($scope, $filter, BooksFactory) {
 
-    $scope.title = 'Books';
+    $scope.title = 'Book library';
     $scope.search = { text: '' };
     $scope.showOnlyFavorites = false;
 
     var allBooks = [];
+    $scope.books = [];
 
-    $scope.books = BooksFactory.getAllBooks();
+    allBooks = BooksFactory.getAllBooks();
 
     // first phase this works
-    allBooks = angular.copy($scope.books);
+    $scope.books = allBooks;
 
     // second phase this will work
-    //$scope.books.$promise.then(function () {
-    //    allBooks = angular.copy($scope.books);
+    //allBooks.$promise.then(function () {
+    //    $scope.books = allBooks;
     //});
 
     $scope.toggleFavorite = function (book) {
         book.Favorite = !book.Favorite;
 
         BooksFactory.favoriteBook(book);
+
+        // update backup used for filtering
+        allBooks = angular.copy($scope.books);
     };
 
     $scope.filterByTitle = function (book) {

@@ -1,0 +1,10 @@
+﻿.jumbotron {
+    background-image: url('../images/jumbotron.jpg');
+    padding-left: 200px;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    color:white;
+    text-shadow: 3px 3px 3px black;
+}
